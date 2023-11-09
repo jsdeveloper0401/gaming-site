@@ -1,0 +1,419 @@
+@import "home.css";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    transition: 0.5s ease;
+}
+.container {
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
+}
+:root {
+    --Orbitron: "Orbitron", sans-serif;
+    /* font-family: var(--Orbitron); */
+    --Paragraph: #737373;
+    --Title-color: #252b42;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+@font-face {
+    font-family: "Orbitron", sans-serif;
+    src: url(../fonts/Orbitron-Regular.ttf);
+}
+@font-face {
+    font-family: "Orbitron", sans-serif;
+    src: url(../fonts/Orbitron-Bold.ttf);
+}
+:root {
+    --Orbitron: "Orbitron", sans-serif;
+}
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 92px;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: #030303;
+}
+.nav-left {
+    display: flex;
+}
+.nav-right {
+    display: flex;
+    gap: 60px;
+}
+.nav-link {
+    font-family: var(--Orbitron);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+.nav-link:hover{
+    color:#FAC525;
+}
+.nav-btn {
+    width: 390px;
+    display: flex;
+    gap: 24px;
+}
+.nav-btn button {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+.nav-btn svg {
+    fill: #fff;
+}
+.nav-btn a {
+      width: 116px;
+    height: 30px;
+    color: #fff;
+    font-family: var(--Orbitron);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.light :is(header,section){
+    background-color: #58B9FF;
+}
+.light .gaming .button:hover{
+    background-color: #030303;
+}
+.hero {
+    width: 100%;
+    background-color: #030303;
+}
+.hero-row {
+    display: flex;
+    padding-top: 210px;
+}
+.hero-logo {
+    width: 660px;
+    height: 32px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.hero-title{
+    width: 100%;
+    height: 16px;
+    font-family: var(--Orbitron);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align:left;
+    color: #57b8ff;
+}
+.hero-logo img {
+    width: 32px;
+    height: 32px;
+}
+.hero-left h1 {
+    width: 556px;
+    height: 258px;
+    margin-top: 14px;
+    font-family: var(--Orbitron);
+    color: #fff;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+}
+.hero-left h4 {
+    width: 615px;
+    height: 56px;
+    margin-top: 45px;
+    font-family: var(--Orbitron);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9a9a9a;
+}
+.hero-btn {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    gap: 40px;
+}
+.hero-btn button {
+    padding: 21px 34px;
+    border: none;
+    background-color: transparent;
+}
+
+.light .light-btn:hover, .gaming-btn button:hover {
+    background-color: black;
+}
+.hero-btn a {
+    font-family: var(--Orbitron);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.hero-btn button:hover {
+    background-color: #59b9ff;
+}
+.gaming {
+    width: 100%;
+    background-color: black;
+}
+.gaming h2 {
+    width: 684px;
+    height: 148px;
+    top: 43.58px;
+    font-family: var(--Orbitron);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.gaming-row {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    display: flex;
+    gap: 95px;
+}
+.gaming .gaming-logo {
+    display: flex;
+    width: 660px;
+    height: 32px;
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--Orbitron);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.gaming-title{
+    width: 100%;
+    height: 16px;
+    font-family: var(--Orbitron);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align:left;
+    color: #fff;
+}
+.gaming h4 {
+    width: 721px;
+    height: 120px;
+    font-family: var(--Orbitron);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #b3b3b3;
+}
+.gaming-btn button {
+    padding: 21px 34px;
+    border: none;
+    background-color: transparent;
+}
+.game{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.game img{
+    width: 32px;
+    height: 30px;
+}
+.gaming-btn button a {
+    color: #fff;
+}
+.gaming-btn button:hover{
+    background-color: #59B9FF;
+}
+.shop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    width: 100%;
+    background-color: #2d3943;
+    background-image: url(../img/gaming.img.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.shop .hero-logo {
+    width: 660px;
+    height: 32px;
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--Orbitron);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.esport-logo h2{
+    width: 203px;
+     color: #57B8FF;
+    font-family: Orbitron;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.esport-logo img {
+    width: 32px;
+    height: 32px;
+}
+.shop h4 {
+    width: 515px;
+    font-family: var(--Orbitron);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #bcbebf;
+}
+.shopping-row {
+    gap: 35px;
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shopping-row .card-item {
+    padding: 30px;
+    width: 600px;
+    height: 210px;
+    border-radius: 20px;
+    background-color:rgba(255, 255, 255, 0.15);
+}
+.multiplayer{
+    width: 100%;
+    height: 732px;
+    background-image: url(../img/multiplayer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.esport{
+    background-color: black;
+}
+.esport-news{
+    padding-top: 75px;
+    display: flex;
+}
+.light-btn a {
+      width: 116px;
+    height: 30px;
+    color: #fff;
+    font-family: var(--Orbitron);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.light-btn{
+    padding: 21px 30px;
+    background-color: transparent;
+    border:2px solid #fff;
+}
+.esport-row{
+    margin-top: 65px;
+    display: flex;   
+    gap: 24px;
+}
+.esport-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.card-item{
+    width: 312px;
+    height: 321px;
+}
+.joystic-title{
+    width: 607px;
+    margin-top: 46px;
+    color: #FFF;
+    font-family: var(--Orbitron);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    text-transform: capitalize;
+}
+.esport-title h4{
+    color: #FFF;
+    font-family: var(--Orbitron);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 74px; 
+    text-transform: capitalize;
+}
+.esport-row p{
+    margin-top: 54px;
+    color: #57B8FF;
+    font-family: Orbitron;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+}
+.card-item h4{
+    margin-top: 20px;
+     color: #FFF;
+    font-family: Orbitron;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: capitalize;
+}
+.card-item p{
+   margin-top: 25px;
+    color: #57B8FF;
+    font-family: Orbitron;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;   
+}
